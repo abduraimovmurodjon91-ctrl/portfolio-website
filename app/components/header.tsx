@@ -9,7 +9,7 @@ const Header = () => {
   const [open, setOpen] = useState<boolean>(false)
   const { theme, toggleTheme } = useTheme()
   const navLinks = [
-    { id: "home", label: "Home" },
+    { id: "hero", label: "Home" },
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
@@ -28,7 +28,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               spy={true}
-              activeClass="text-blue font-bold "
+              activeClass="text-blue font-bold"
               className="relative cursor-pointer text-foreground after:content-['']  after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-blue after:transition-all after:duration-300 hover:after:w-full">{link.label}</Link>
           ))}
         </ul>

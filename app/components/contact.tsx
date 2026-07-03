@@ -33,9 +33,8 @@ const Contact = () => {
         <div className="flex flex-col text-center items-center ">
           <Title title="Let's Work Together" />
           <p className="w-100 mt-2">Have a project in mind? Feel free to reach out. I'm always open to discussing new opportunities.</p>
-          <div className="mt-5 flex flex-col gap-3 justify-center">
+          <div className="mt-5 flex flex-col gap-3 justify-between">
             <ContactIcon image="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/mail.svg" name="email" link="abduraimovmurodjon91@gmail.com" />
-            <ContactIcon image="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/map-pin.svg" name="location" link="" />
             <ContactIcon image="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/telegram.svg" name="telegram" link="@Murod_iken" />
             <ContactIcon image="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" name="Github" link="https://github.com/abduraimovmurodjon91-ctrl" />
           </div>
@@ -47,7 +46,7 @@ const Contact = () => {
           {errors.email?.message}
           <textarea {...register("message")} required className="w-90 lg:w-full h-50 border-2 px-2 py-2 rounded-xs border-blue" placeholder="Enter Message"></textarea>
           {errors.message?.message}
-          <button className="w-full h-12  flex items-center justify-center px-2 py-2 gap-3 rounded-xl bg-blue  text-foreground font-medium">Send Message <ArrowRight /></button>
+          <button className="w-full h-12  flex items-center justify-center px-2 py-2 gap-3 rounded-xl bg-blue  text-button font-medium">Send Message <ArrowRight /></button>
         </form>
       </div>
     </section>

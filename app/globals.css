@@ -6,6 +6,7 @@
   --subtitle: #4e4e52;
   --blue: #3a44f9;
   --card: #eff1f6;
+  --button:#fff;
 }
 
 .dark {
@@ -14,6 +15,7 @@
   --subtitle: #4e4e52;
   --blue: #3a44f9;
   --card: #121127;
+  --button:#ffffff;
 }
 @theme inline {
   --color-background: var(--background);
@@ -21,6 +23,7 @@
   --color-subtitle: var(--subtitle);
   --color-blue: var(--blue);
   --color-card: var(--card);
+  --color-button:var(--button);
   --font-sans: var(--font-jakarta);
   --font-mono: var(--font-geist-mono);
 }

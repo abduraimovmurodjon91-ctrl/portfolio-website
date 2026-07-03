@@ -1,5 +1,5 @@
 import Image from "next/image"
-import FooterImg from "../favicon .ico"
+import FooterImg from "../favicon.ico"
 const Footer = () => {
   return (
     <footer className="mt-[50px] container">

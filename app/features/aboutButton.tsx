@@ -11,8 +11,8 @@ const AboutButton = ({ icon, text, subtitle }: PropsButton) => {
             <div className="flex gap-3 items-center">
                 <span>{icon}</span>
                 <div className="flex flex-col ">
-                    <h3 className='text-card'>{text}</h3>
-                    <p className='text-foreground text-[14px] font-normal'>{subtitle}</p>
+                    <h3 className='text-foreground'>{text}</h3>
+                    <p className='text-foreground/80 text-[14px] font-normal'>{subtitle}</p>
                 </div>
             </div>
         </div>

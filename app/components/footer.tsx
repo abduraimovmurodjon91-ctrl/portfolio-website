@@ -2,7 +2,7 @@ import Image from "next/image"
 import FooterImg from "../favicon .ico"
 const Footer = () => {
   return (
-    <footer className="mt-[100px] container">
+    <footer className="mt-[50px] container">
       <div className="flex items-center gap-3">
         <Image alt="footer_image" width={30} height={30} className="rounded-full" src={FooterImg} />
         <div className="flex flex-col gap-0.5">

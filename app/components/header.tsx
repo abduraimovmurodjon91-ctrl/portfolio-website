@@ -28,7 +28,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               spy={true}
-              activeClass="text-blue font-bold"
+              activeClass="text-blue "
               className="relative cursor-pointer text-foreground after:content-['']  after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-blue after:transition-all after:duration-300 hover:after:w-full">{link.label}</Link>
           ))}
         </ul>
@@ -41,21 +41,43 @@ const Header = () => {
           </button>
         </div>
       </div>
-      {open && (
-        <div>
-          <ul className="lg:hidden flex flex-col items-center gap-7">
-            {navLinks.map((link) => (
-              <Link key={link.id}
-                to={link.id}
-                smooth={true}
-                duration={500}
-                spy={true}
-                activeClass="text-blue font-bold "
-                className="relative cursor-pointer text-foreground after:content-['']  after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-blue after:transition-all after:duration-300 hover:after:w-full">{link.label}</Link>
-            ))}
-          </ul>
-        </div>
-      )}
+      <div
+        className={`
+    absolute
+    top-full
+    left-0
+    w-full
+    h-65
+    rounded-b-2xl
+    bg-background
+    lg:hidden
+    z-50
+    transition-all
+    duration-300
+    ease-in-out
+    ${open
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-5 pointer-events-none"
+          }
+  `}
+      >
+        <ul className="flex flex-col items-center gap-7">
+          {navLinks.map((link) => (
+            <Link
+              key={link.id}
+              to={link.id}
+              smooth={true}
+              duration={500}
+              spy={true}
+              onClick={() => setOpen(false)}
+              activeClass="text-blue "
+              className="relative cursor-pointer text-foreground after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-blue after:transition-all after:duration-300 hover:after:w-full"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </ul>
+      </div>
     </header>
   )
 }

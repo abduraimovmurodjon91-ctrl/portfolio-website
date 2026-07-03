@@ -18,11 +18,11 @@ interface Props {
 import Image, { StaticImageData } from 'next/image'
 const Card = ({ image, title, subtitle, links, technologies }: Props) => {
     return (
-        <div className='w-100 h-100 rounded-xl bg-card  duration-300'>
+        <div className='w-100 h-105  rounded-xl bg-card  duration-300'>
             <Image className='w-full rounded-xl h-50' src={image} alt='image' />
             <div className='px-3'>
                 <div className='mt-3'>
-                    <h3 className='text-foreground font-medium text-[24px]'>{title}</h3>
+                    <h3 className='text-foreground font-medium mb-2 text-[24px]'>{title}</h3>
                     <p className='text-[14px] font-normal text-foreground/80'>{subtitle}</p>
                 </div>
                 <div className='flex gap-3 mt-5 items-center'>

@@ -2,15 +2,15 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #000000;
+  --foreground: #000;
   --subtitle: #4e4e52;
   --blue: #3a44f9;
   --card: #eff1f6;
 }
 
 .dark {
-  --bacround: #00010c;
-  --foreground: #8b8b94;
+  --background: #00010c;
+  --foreground: #f5f5f5;
   --subtitle: #4e4e52;
   --blue: #3a44f9;
   --card: #121127;
@@ -45,7 +45,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--bacround);
+  background-color: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
